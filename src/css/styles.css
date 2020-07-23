@@ -41,9 +41,9 @@ body {
 .sorter {
   margin: 0px auto;
   display: grid;
-  grid-template-columns: 120px 1fr 120px;
+  grid-template-columns: 240px 1fr 240px;
   grid-gap: 5px;
-  width: 420px;
+  width: 660px;
 }
 
 .button {
@@ -111,7 +111,7 @@ body {
 }
 
 .sorter > .image {
-  width: 120px;
+  width: 240px;
   height: 180px;
   margin: auto;
   grid-row: 1 / 7;

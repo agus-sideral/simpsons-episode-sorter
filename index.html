@@ -19,10 +19,23 @@
   <script src="src/js/lz-string.min.js"></script>
   <script src="src/js/seedrandom.min.js"></script>
   <script src="src/js/main.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="src/js/jquery-i18n/jquery.i18n.js"></script>
+  <script src="src/js/jquery-i18n/jquery.i18n.messagestore.js"></script>
+  <script src="src/js/jquery-i18n/jquery.i18n.fallbacks.js"></script>
+  <script src="src/js/jquery-i18n/jquery.i18n.language.js"></script>
+  <script src="src/js/jquery-i18n/jquery.i18n.parser.js"></script>
+  <script src="src/js/jquery-i18n/jquery.i18n.emitter.js"></script>
+  <script src="src/js/jquery-i18n/jquery.i18n.emitter.bidi.js"></script>
+  <script type="application/json" src="src/i18n/en.json"></script>
+  <script type="application/json" src="src/i18n/es.json"></script>
+  <script src="src/js/i18n-config.js"></script>
 </head>
 
 <body>
 <div class="container">
+
 
     <div class="progress">
         <span class="progressbattle"></span>
@@ -61,8 +74,13 @@
     <div class="info">
         <a href="https://execfera.github.io/charasort/">Original Sorter (Touhou Project)</a> | <a href="https://github.com/agus-sideral/simpsons-episode-sorter">Source Code</a> | <a href="https://github.com/execfera/charasort">Original Project Source Code</a>  | <a class="clearsave">Clear Save Data</a>
         
-        <br><br>
+        <ul class="locale-switcher">
+          <li><a href="#" data-locale="en">English</a></li>
+          <li><a href="#" data-locale="es">Espanol</a></li>
+        </ul>
 
+        <br><br>
+        <h1 id="welcome"></h1>
         <p>Sorter for The Simpsons episodes. Pick your sources, and hit the Start button.</p>
         <p><strong>Certain options have details that you can hover to read.</strong></p>
         <p>Click on the character you like better from the two, or tie them if you like them equally or don't know them.</p>
